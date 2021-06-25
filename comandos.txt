@@ -1,0 +1,5 @@
+idlj -fall  Sum.idl
+javac *.java SumApp/*.java
+start orbd -ORBInitialPort 8001
+start java SumServer -ORBInitialPort 8001 -ORBInitialHost localhost
+java SumClient -ORBInitialPort 8001 -ORBInitialHost localhost

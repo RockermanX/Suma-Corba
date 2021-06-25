@@ -1,0 +1,10 @@
+module SumApp{
+interface Sum{
+
+double sum(in double n1,in double n2);
+double res(in double n1,in double n2);
+double mult(in double n1,in double n2);
+double division(in double n1,in double n2);
+oneway void shutdown();
+};
+};
